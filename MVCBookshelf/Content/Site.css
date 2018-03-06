@@ -79,3 +79,18 @@ a.navbar-brand {
         text-shadow: 1px 1px white;
         font-weight: bold;
     }
+    footer{
+        color: cornflowerblue;
+        text-align:center;
+    }
+    img#splash-img{
+        width: 50vw;
+        margin-top: 5%;
+
+    }
+    p#splash{
+        text-align: center;
+    }
+    a#enter{
+        margin-left: 50%;
+    }
