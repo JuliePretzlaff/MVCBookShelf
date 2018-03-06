@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: beige;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +23,59 @@ select,
 textarea {
     max-width: 280px;
 }
+div.thumbnail,
+div.caption {
+    background-color:aliceblue;
+}
+
+a {
+    color: cornflowerblue;
+    text-shadow: 1px 1px white;
+    font-weight: bold;
+}
+
+    a:hover {
+        color: #ff664f;
+        text-decoration: none;
+        text-shadow: 1px 1px white;
+        font-weight: bold;
+    }
+
+input.btn.btn-default {
+    background-color: aliceblue;
+    color: cornflowerblue;
+}
+
+    input.btn.btn-default:hover {
+        background-color: white;
+        color: #ff664f;
+    }
+h2#index-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: cornflowerblue;
+    font-weight: bold;
+    text-align: center;
+}
+img#shelf{
+    width: 100%;
+
+}
+div.navbar.navbar-inverse.navbar-fixed-top {
+    background-color: aliceblue;
+    
+}
+a.navbar-brand {
+    color: cornflowerblue !important;
+    text-shadow: 1px 1px white;
+    font-weight: bold;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: cornflowerblue !important;
+    text-shadow: 1px 1px white;
+    font-weight: bold;
+}
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #ff664f !important;
+        text-shadow: 1px 1px white;
+        font-weight: bold;
+    }

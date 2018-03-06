@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MVCBookshelf.Models.Book>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 id="index-title">Julie's Awesome Bookshelf</h2>
+
+<div class="row">
+    <div class="col">
+        <img id="shelf" src="~/Content/images/pexels-photo.jpg" />
+    </div>
+</div>
+    <p>
+        @Html.ActionLink("Add a book", "Create")
+    </p>
+
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-xs-6 col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </h3>
+                        <p>
+                            @Html.DisplayNameFor(model => model.PublishedDate): @Html.DisplayFor(modelItem => item.PublishedDate)
+                        </p>
+                        <p>
+                            @Html.ActionLink("Details", "Details", new { id = item.BookID })
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+
+
